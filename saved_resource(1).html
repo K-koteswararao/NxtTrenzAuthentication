@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://wchat.in.freshchat.com/home/117054 -->
+<html lang="en-us" class="fc-widget-normal multi-widget-ui"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Freshchat</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!--<base href="/">--><base href=".">
+<meta name="hotline-web/config/environment" content="%7B%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22modulePrefix%22%3A%22hotline-web%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22%2F%22%2C%22rootURL%22%3A%22%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22cdnUrl%22%3A%22https%3A%2F%2Fassetscdn-wchat.in.freshchat.com%2Fstatic%2F%22%2C%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22cdnEnabled%22%3Atrue%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22hotline-web%22%2C%22version%22%3A%220.0.0%2B9e1ee746%22%7D%2C%22contentSecurityPolicy%22%3A%7B%22style-src%22%3A%22&#39;unsafe-inline&#39;%20*%22%2C%22font-src%22%3A%22&#39;self&#39;%20*%20data%3A%22%2C%22img-src%22%3A%22&#39;self&#39;%20*%20data%3A%22%2C%22connect-src%22%3A%22&#39;self&#39;%20*%22%2C%22script-src%22%3A%22&#39;self&#39;%20&#39;unsafe-eval&#39;%20&#39;unsafe-inline&#39;%20https%3A%2F%2Fassetscdn-wchat.in.freshchat.com%20https%3A%2F%2F*.freshchat.com%20https%3A%2F%2F*.freshpori.com%20https%3A%2F%2Frts-static-prod.freshworksapi.com%2Find%2Frts-min.js%22%2C%22child-src%22%3A%22&#39;self&#39;%20*%20blob%3A%22%2C%22media-src%22%3A%22&#39;self&#39;%20https%3A%2F%2F*.freshchat.com%20https%3A%2F%2F*.freshpori.com%22%2C%22manifest-src%22%3A%22&#39;self&#39;%20https%3A%2F%2F*.freshchat.com%20https%3A%2F%2F*.freshpori.com%22%2C%22default-src%22%3A%5B%22&#39;none&#39;%22%5D%7D%2C%22contentSecurityPolicyHeader%22%3A%22Content-Security-Policy%22%2C%22contentSecurityPolicyMeta%22%3Atrue%2C%22outputPath%22%3A%22static%22%2C%22socket%22%3A%7B%22domain%22%3A%7B%22production%22%3A%22rts-in-fcht.freshworksapi.com%22%7D%2C%22protocol%22%3A%22https%3A%2F%2F%22%2C%22subDelay%22%3A15000%2C%22reconnectDelay%22%3A10%7D%2C%22webpush%22%3A%7B%22domain%22%3A%7B%22production%22%3A%22%7BappName%7D.webpush.in.freshchat.com%22%2C%22crm%22%3A%7B%22production%22%3A%22%7BappName%7D.wchat.in.webpush.myfreshworks.com%22%7D%7D%2C%22protocol%22%3A%22https%3A%2F%2F%22%7D%2C%22hotlineEnv%22%3A%7B%22type%22%3A%22production%22%7D%2C%22cdn%22%3A%7B%22enabled%22%3A%7B%22forAssets%22%3Atrue%2C%22forApi%22%3Atrue%7D%2C%22assets%22%3A%22assetscdn-%22%2C%22api%22%3A%22apicdn-%22%2C%22domain%22%3A%7B%22production%22%3A%22.in.freshchat.com%2F%7BdeploymentPath%7D%22%7D%2C%22subDomain%22%3A%22wchat%22%2C%22protocol%22%3A%22https%3A%2F%2F%22%7D%2C%22rtsCdnUrl%22%3A%7B%22production%22%3A%22https%3A%2F%2Frts-static-prod.freshworksapi.com%2Find%2Frts-min.js%22%7D%2C%22helpWidgetCdnUrl%22%3A%22https%3A%2F%2Fassetscdn-wchat.in.freshchat.com%2Fhelp-widget%2Faps1-00%22%2C%22haystackConfig%22%3A%7B%22production%22%3A%7B%22endPoint%22%3A%22https%3A%2F%2Frum.haystack.es%2Ffreshchat%2F_logs%22%2C%22authToken%22%3A%226f5962f1bb5440dc30f0a464a0c63fc5%22%7D%2C%22staging%22%3A%7B%22endPoint%22%3A%22https%3A%2F%2Frum.stage.haystack.es%2Ffreshchat%2F_logs%22%2C%22authToken%22%3A%22a6198e17791993148328fafdf0a3c7c1%22%7D%2C%22cacheLogTime%22%3A60000%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
+<meta http-equiv="Content-Security-Policy" content="style-src &#39;unsafe-inline&#39; *; font-src &#39;self&#39; * data:; img-src &#39;self&#39; * data:; connect-src &#39;self&#39; *; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://assetscdn-wchat.in.freshchat.com https://*.freshchat.com https://*.freshpori.com https://rts-static-prod.freshworksapi.com/ind/rts-min.js; child-src &#39;self&#39; * blob:; media-src &#39;self&#39; https://*.freshchat.com https://*.freshpori.com; manifest-src &#39;self&#39; https://*.freshchat.com https://*.freshpori.com; default-src &#39;none&#39;; ">
+
+    
+<link href="./vendor.d64d219ca4493f67a3970efc52d51c86.css" rel="stylesheet">
+
+    
+<link href="./hotline-web.d41d8cd98f00b204e9800998ecf8427e.css" rel="stylesheet">
+
+
+    
+  <script src="./rts-min.js.download"></script><link rel="stylesheet" type="text/css" href="./2244.css"></head>
+  <body class="webchat ember-application" dir="ltr">
+    
+
+    
+<script src="./vendor.657f3dcde82ee7607bed5b4ac7579bb9.js.download"></script>
+
+    
+<script src="./2556.js.download"></script>
+<link href="./chunk.b8941b36058dd07833fd.css" rel="stylesheet">
+<link href="./fd-messaging.786ebdc403868a9ed9aa.css" rel="stylesheet">
+<script src="./fd-messaging.a571a87e95eded9ea732.js.download"></script>
+
+
+    <div id="ember-basic-dropdown-wormhole"></div>
+  
+
+<!---->  <div aria-live="polite" id="ember3" class="content-vp ember-view"><!----><div class="hotline-launcher     " tabindex="-1">
+  <div class="viewport h-chat-custom ">
+    <div class="widget-status animated fadeInUp faster" aria-live="polite">
+      <div class="help-text  dn">
+<!----></div>
+
+    </div>
+    <div id="ember19953" class="h-conv ember-view"><div class="fc-conversation-view">
+  <div class="h-header  single-channel-header ">
+    <div class="title fadeIn solid">
+        <div class="logo">
+            <img class="animated zoomIn faster" src="./img_u78op4m25n_80e18e01b23c33e1394f9f8e424e10e9d0e73250e6d1ebc83168d49df4bfdd4c.png" alt="Widget logo">
+        </div>
+      <div class="channel-info animated fadeIn faster  channel-info-width">
+        <h1 class="channel-title
+        
+        ">
+          General Support
+        </h1>
+<!---->          <p class="channel-desc ">We’re currently away. Please leave us a message!</p>
+      </div>
+<!---->    </div>
+  </div>
+  <div class="body
+     single-channel-section ">
+<!---->    <div class="h-chat-window ">
+      <div class="cal-picker-maximized hide-cal-picker">
+        <div id="ember19954" class="maximized-slots ember-view"><div class="cal-picker-nav">
+  <span class="cal-nav-left">
+    <i class="ic-cal-back clickable icon-ic_back_calendar" role="button" tabindex="0" aria-label="Minimize calendar picker" data-ember-action="" data-ember-action-19955="19955"></i>
+  </span>
+  <span class="cal-picker-title">
+    Schedule a meeting
+  </span>
+  <span class="cal-meeting-length">
+    
+  </span>
+</div>
+<div class="cal-timings-scroll">
+  <div id="ember19956" class="ember-view"><!----></div>
+</div></div>
+      </div>
+      <div class="expand">
+          <div class="fc-agent-profile shadow  ">
+            <div class="u-profile-info">
+              <div class="user-details  agent-section" data-ember-action="" data-ember-action-20143="20143">
+                <div class="u-agent-avatar">
+                        <span class="avatar-content-wrap agent-circle">
+                          <img src="./img_ri06m2g74v_8470a3609397d4f7b16080a4fe39f6c0773f7b8333e2fb8ed7632ac274ae9a47.jpeg" alt="Agent profile picture">
+                        </span>
+                                      </div>
+                <div class="u-agent-info">
+                    <p class="u-agent-name">
+                      Joy
+                    </p>
+                      <p class="u-agent-designation">
+                        <img class="designation-icon" src="./briefcase-regular.1fb32179dcc50beeba1a21747ce7a539.svg" alt="Designation icon">
+                        Customer Support Executive
+                      </p>
+                </div>
+              </div>
+<!---->            </div>
+          </div>
+<!---->      </div>
+<!---->      <div class="h-conv-chat h-theme-bg-1 animated fadeInUp speed scroll-section  profile " tabindex="0" role="status" aria-live="assertive" aria-relevant="additions" aria-atomic="false">
+        <ul id="ember19957" class="fc-app-conversation-message ember-view"><!---->
+  <li id="ember19958" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+            <span class="avatar-content-wrap">
+              <span class="theme-bg theme-5">
+                <span class="avatar-content">N</span>
+              </span>
+            </span>
+                    </div>
+          <span class="time">
+<!---->          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">NxtWave - CCBP</div>
+        <div id="ember19959" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember19960" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Hello CCBPian! Need help?<br><br>Just let us know your query and we'll get back to you within<b> <i>2 hours</i></b><i> </i>typically.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+
+    <li id="ember19962" class="fc-ui-message message-container odd grp-ended grp-started ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!---->    <div class="h-conv multiple">
+<!---->        <div id="ember19963" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20076" class="fc-ui-unity-message-bubble ember-view">    <div class="chat_img_wrp file-with-text">
+      <img src="./img_s93c29gpua_c55b9ffca79520c80127aac468e6cf38c493ea4fe674f6825577c29f7372a859.png" width="1919" height="132" class="chat_img chat_frame" alt="Screenshot 2024-04-12 193425" tabindex="0" loading="lazy" data-ember-action="" data-ember-action-20077="20077">
+    </div>
+</div>
+            <div id="ember20078" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">without takeing test i got be like now what can i do to solve this.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+        <div class="time">
+              Apr 12, 7:35 PM
+                  </div>
+    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19968" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view">    <div class="h-divide">
+      <div>
+        <span>
+          <span class="d-line-left"></span>
+        </span>
+        <span>
+          <span class="date">
+              13 Apr 2024
+                      </span>
+        </span>
+        <span>
+          <span div="" class="d-line-right"></span>
+        </span>
+      </div>
+    </div>
+
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+            <span class="avatar-content-wrap">
+              <span class="theme-bg theme-3">
+                <span class="avatar-content">C</span>
+              </span>
+            </span>
+                    </div>
+          <span class="time">
+                Apr 13, 9:58 AM
+          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">Customer Support</div>
+        <div id="ember19969" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20080" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Hello,<br> <br>It appears you attempted to contact us outside of our regular business hours. We are available now and ready to assist you. Please respond to this message, and we'll be happy to help.<br> <br>Thank you, Nxtwave</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19972" class="fc-ui-message message-container odd grp-ended grp-started ember-view">    <div class="h-divide">
+      <div>
+        <span>
+          <span class="d-line-left"></span>
+        </span>
+        <span>
+          <span class="date">
+              21 May 2024
+                      </span>
+        </span>
+        <span>
+          <span div="" class="d-line-right"></span>
+        </span>
+      </div>
+    </div>
+
+<!---->
+  <div class="h-chat  ">
+<!---->    <div class="h-conv multiple">
+<!---->        <div id="ember19973" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20082" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Sir currently my iB Com app is not working and if I entered my contact number then it gives as user not registered so how can solve that problem...</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+        <div class="time">
+              May 21, 11:47 AM
+                  </div>
+    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19976" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+            <img src="./ic_bot_dp.a992e8c51bb5cebd186fe230a6fc3202.svg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+    <div class="h-conv multiple">
+        <div class="agent-name">NxtWave  Support</div>
+        <div id="ember19977" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20084" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Hi Koteswararao Kantumajji, I'm Madhuri.<br> <br>Welcome to Nxtwave Learner Support.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19980" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_38vffveq7j_2535a6b094f69bb29bade6adf65b4c5abf7d4f0968755d2c29a4e440807c850f.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+          <span class="time">
+                May 21, 11:47 AM
+          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">Madhuri</div>
+        <div id="ember19981" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20086" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Lend me a couple of minutes to check your chat and respond.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19984" class="fc-ui-message message-container odd grp-started ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!---->    <div class="h-conv multiple">
+<!---->        <div id="ember19985" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20088" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Okey madam</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19988" class="fc-ui-message message-container odd ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!---->    <div class="h-conv multiple">
+<!---->        <div id="ember19989" class="ember-view">  <div class="h-comment   media-message ">
+<!---->
+            <div id="ember20090" class="fc-ui-unity-message-bubble ember-view">    <div class="chat_img_wrp ">
+      <img src="./img_m22ck1tt75_c3a7403b7f7813e1ea3f58970e9d97db1661ee83205ecaffbeebe1d3b264f112.jpg" width="1080" height="132" class="chat_img chat_frame" alt="Screenshot_2024-05-21-11-48-22-22_5b2965038b1a06aab39ec5feaedc21f5" tabindex="0" loading="lazy" data-ember-action="" data-ember-action-20091="20091">
+    </div>
+</div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19992" class="fc-ui-message message-container odd grp-ended ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!---->    <div class="h-conv multiple">
+<!---->        <div id="ember19993" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20092" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">It shows me like this madam</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+        <div class="time">
+              May 21, 11:48 AM
+                  </div>
+    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember19996" class="fc-ui-message message-container grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_38vffveq7j_2535a6b094f69bb29bade6adf65b4c5abf7d4f0968755d2c29a4e440807c850f.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+<!---->    <div class="h-conv multiple">
+        <div class="agent-name">Madhuri</div>
+        <div id="ember19997" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20094" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Thank you for waiting.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20000" class="fc-ui-message message-container agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!----><!---->    <div class="h-conv multiple">
+<!---->        <div id="ember20001" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20096" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">We have removed the IB com, and it's no longer available. You will receive all updates through announcement channels and WhatsApp, so please check them regularly.<br></div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20004" class="fc-ui-message message-container grp-ended agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!---->          <span class="time">
+                May 21, 11:54 AM
+          </span>
+    <div class="h-conv multiple">
+<!---->        <div id="ember20005" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20098" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">You can access the Announcements section at the left menu section on the home page of your portal.<br><br>Access link: <a href="https://announcements.ccbp.in/" target="_blank" rel="noreferrer noopener">https://announcements.ccbp.in/</a></div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20008" class="fc-ui-message message-container odd grp-ended grp-started ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!---->    <div class="h-conv multiple">
+<!---->        <div id="ember20009" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20100" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Okey madam thank you</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+        <div class="time">
+              May 21, 11:56 AM
+                  </div>
+    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20012" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_38vffveq7j_2535a6b094f69bb29bade6adf65b4c5abf7d4f0968755d2c29a4e440807c850f.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+          <span class="time">
+                May 21, 11:57 AM
+          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">Madhuri</div>
+        <div id="ember20013" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20102" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">You are welcome. Is there anything else that I can assist you with?</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20016" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_38vffveq7j_2535a6b094f69bb29bade6adf65b4c5abf7d4f0968755d2c29a4e440807c850f.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+          <span class="time">
+                May 21, 12:02 PM
+          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">Madhuri</div>
+        <div id="ember20017" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20104" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Are we connected?</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20020" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_38vffveq7j_2535a6b094f69bb29bade6adf65b4c5abf7d4f0968755d2c29a4e440807c850f.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+          <span class="time">
+                May 21, 12:15 PM
+          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">Madhuri</div>
+        <div id="ember20021" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20106" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Looks like you have stepped away. I am temporarily resolving this chat. Feel free to reach us for further assistance between 10 AM - 8 PM.</div>
+<!----></div>
+            <div id="ember20108" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text "><br></div>
+<!----></div>
+            <div id="ember20110" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Happy learning :)</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20028" class="fc-ui-message message-container odd grp-ended grp-started ember-view">    <div class="h-divide">
+      <div>
+        <span>
+          <span class="d-line-left"></span>
+        </span>
+        <span>
+          <span class="date">
+              7 Jun 2024
+                      </span>
+        </span>
+        <span>
+          <span div="" class="d-line-right"></span>
+        </span>
+      </div>
+    </div>
+
+<!---->
+  <div class="h-chat  ">
+<!---->    <div class="h-conv multiple">
+<!---->        <div id="ember20029" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20112" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Sir I didn't get my certificate of introduction to database can you check it once</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+        <div class="time">
+              Jun 7, 7:33 PM
+                  </div>
+    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20032" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view">    <div class="h-divide">
+      <div>
+        <span>
+          <span class="d-line-left"></span>
+        </span>
+        <span>
+          <span class="date">
+              8 Jun 2024
+                      </span>
+        </span>
+        <span>
+          <span div="" class="d-line-right"></span>
+        </span>
+      </div>
+    </div>
+
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+            <img src="./ic_bot_dp.a992e8c51bb5cebd186fe230a6fc3202.svg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+    <div class="h-conv multiple">
+        <div class="agent-name">NxtWave  Support</div>
+        <div id="ember20033" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20114" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Hi Koteswararao Kantumajji, I'm Joy.<br> <br>Welcome to Nxtwave Learner Support.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20036" class="fc-ui-message message-container grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_ri06m2g74v_8470a3609397d4f7b16080a4fe39f6c0773f7b8333e2fb8ed7632ac274ae9a47.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+<!---->    <div class="h-conv multiple">
+        <div class="agent-name">Joy</div>
+        <div id="ember20037" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20116" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Lend me a couple of minutes to check your chat and respond.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20040" class="fc-ui-message message-container agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!----><!---->    <div class="h-conv multiple">
+<!---->        <div id="ember20041" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20118" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Sure. Please allow me a couple of minutes.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20044" class="fc-ui-message message-container agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!----><!---->    <div class="h-conv multiple">
+<!---->        <div id="ember20045" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20120" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Here's your certificate: <a href="https://certificates.ccbp.in/academy/introduction-to-databases?id=UWRPUOFHCM" target="_blank" rel="noreferrer noopener">https://certificates.ccbp.in/academy/introduction-to-databases?id=UWRPUOFHCM</a></div>
+<!----></div>
+            <div id="ember20122" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text "><br>Note: You will receive a certificate via your registered email address within 24 hours of completing the course. Please check your registered email ID next time.</div>
+<!----></div>
+            <div id="ember20124" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text "><br></div>
+<!----></div>
+            <div id="ember20126" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">To find your certificate, search your registered email ID - <a href="mailto:nannakupremathokote2004@gmail.com" rel="noreferrer noopener">nannakupremathokote2004@gmail.com</a> with a key phrase -'Your course completion certificate'.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20054" class="fc-ui-message message-container grp-ended agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+<!---->          <span class="time">
+                Jun 8, 11:36 AM
+          </span>
+    <div class="h-conv multiple">
+<!---->        <div id="ember20055" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20128" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Let me know if you need help with anything else.</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20058" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_ri06m2g74v_8470a3609397d4f7b16080a4fe39f6c0773f7b8333e2fb8ed7632ac274ae9a47.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+          <span class="time">
+                Jun 8, 11:43 AM
+          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">Joy</div>
+        <div id="ember20059" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20130" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Are we connected?</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!---->    <li id="ember20062" class="fc-ui-message message-container grp-ended grp-started agent-msg ember-view"><!---->
+<!---->
+  <div class="h-chat  ">
+          <div class="agent-pic " aria-hidden="true">
+              <img src="./img_ri06m2g74v_8470a3609397d4f7b16080a4fe39f6c0773f7b8333e2fb8ed7632ac274ae9a47.jpeg" height="24px" width="24px" alt="Agent profile picture">
+          </div>
+          <span class="time">
+                Jun 8, 11:49 AM
+          </span>
+    <div class="h-conv multiple">
+        <div class="agent-name">Joy</div>
+        <div id="ember20063" class="ember-view">  <div class="h-comment    ">
+<!---->
+            <div id="ember20132" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Looks like you have stepped away. I am temporarily resolving this chat. Feel free to reach us for further assistance between 10 AM - 8 PM.</div>
+<!----></div>
+            <div id="ember20134" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text "><br></div>
+<!----></div>
+            <div id="ember20136" class="fc-ui-unity-message-bubble ember-view">  <div class="h-message-text ">Happy learning :)</div>
+<!----></div>
+
+     
+  </div>
+<!----></div>
+
+<!----><!---->
+<!---->    </div>
+  </div>
+<!----><!----></li>
+<!----><!----><!----><!----><!----><!---->    <li class="ui-agent-typing-indicator-wrap">
+      <div class="ui-agent-typing-indicator hidden" aria-label="Agent is typing">
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+  <span class="indicator-dot" aria-hidden="true"></span>
+</div>
+     
+
+    </li>
+<!----></ul>
+      </div>
+    </div>
+    <!---->
+      <div class="h-reply-wrapper ">
+        <div class="h-reply ">
+<!----><!----><!---->              <!---->
+
+                <div data-placeholder="Reply here..." placeholder="Reply here..." data-test-id="ui-editor" aria-label="Type here to reply and please press enter to send the message" tabindex="0" id="app-conversation-editor" class="editable ce-textarea emoji editor-placeholder desktop-browser ember-view" contenteditable="true"><p><br></p></div>
+<!---->              
+
+                    <input accept="file" id="fileUploadInput" class="ember-text-field ember-view" type="file">
+                  <a href="https://wchat.in.freshchat.com/#" class="h-reply-attach
+                        test-class" role="button" aria-label="File attachment" data-ember-action="" data-ember-action-20071="20071">
+                    <i class="icons icon-ic_attachment"></i>
+                  </a>
+                      
+                      <div id="ember20073" class="ember-view ember-basic-dropdown-trigger
+      
+      
+      
+       h-reply-smiley " role="button" tabindex="0" data-ebd-id="ember20072-trigger" aria-owns="ember-basic-dropdown-content-ember20072" aria-expanded="false">
+    
+                      <div class="emoji-pic " aria-label="Emoji picker" data-ember-action="" data-ember-action-20074="20074">
+                        <i class="icons icon-ic_smiley"></i>
+                      </div>
+                    
+  </div>
+
+                      <div id="ember-basic-dropdown-content-ember20072" class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
+
+                  
+
+<!---->        </div>
+<!---->      </div>
+<!----><!---->  </div>
+  <span aria-live="assertive" class="aria-live-region"></span>
+</div>
+</div>
+  </div>
+<!----></div>
+
+<!---->
+<div class="d-hotline h-btn animated zoomIn faster eager-load  dn  " tabindex="0" role="button" data-ember-action="" data-ember-action-4="4">
+      <div id="chat-icon" aria-label="Chat"></div>
+    <div class=" ">
+      <span aria-hidden="true">
+        
+      </span>
+    </div>
+</div>
+<style type="text/css">
+
+  
+
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Cantarell', 'Helvetica Neue', sans-serif !important;
+  }
+  .h-chat-custom .odd .h-conv .h-comment,
+  .h-chat-custom .h-channel .h-header,
+  .h-chat-custom .h-channel .dummy-bar,
+  .h-chat-custom .h-conv .h-header,
+  .h-chat-custom .odd .h-conv .h-comment,
+  .h-chat-custom .h-conv div.body div.message-container.odd span.chat-msg,
+  .iframe-modal .h-modal-notes .modal-header,
+  .h-chat-custom .odd .h-conv .h-comment.file-attached .h-message-text,
+  .h-chat-custom .odd .h-conv .h-comment.media-message .h-message-text {
+    background-color: #0c8ae9 !important;
+  }
+
+  .h-chat-custom .odd .h-conv .h-comment .h-message-text a,
+  .hotline-launcher.h-open .viewport .h-conv .faq-content .h-header.article-view-header .category-title .sub-title {
+    color: #FFFFFF !important;
+  }
+
+  .h-chat-custom .h-channel .h-header {
+    border: 0.1px solid #0c8ae9 !important;
+  }
+
+  .h-chat-custom .h-channel .h-header .icon, .h-chat-custom .h-conv .h-header .icon,
+  .h-chat-custom .h-channel .h-header .conv-title, .h-chat-custom .h-conv .h-header .conv-title,
+  .h-chat-custom .h-channel .h-header .ic-back, .h-chat-custom .h-conv .h-header .ic-back,
+  .h-chat-custom .h-channel .h-header .title, .h-chat-custom .h-conv .h-header .title,
+  .h-chat-custom .odd .h-conv .h-comment,
+  .h-chat-custom .h-conv div.body div.message-container.odd span.chat-msg,
+  .iframe-modal .h-modal-notes .modal-header .frame-title,
+  .iframe-modal .h-modal-notes .modal-header .h-close i,
+  .preview-bubble {
+    color: #FFFFFF !important;
+  }
+
+  .h-chat-custom .h-conv div.body div.message-container.odd span.arrow.right {
+    border-left-color: #0c8ae9 !important;
+  }
+
+  .h-chat-custom div.h-conv div.body div.h-conv-chat {
+    background-image: url("https://assetscdn-wchat.in.freshchat.com/static/assets/texture_background_1.aff96620ed7b5dfc8fbadb616251a75a.png") !important;
+  }
+  .preview-wrapper .top-border{
+    border-top: 4px solid #0c8ae9;
+  }
+
+  .reply-options .reply-option-button,
+  .h-reply-wrapper .h-reply-button .h-img-button,
+  .actions-button-dropdown .h-img-button,
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .fc-carousel-wrapper .h-img-button,
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .button-region .h-img-button,
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .fc-carousel-cards .h-img-button,
+  .hotline-launcher.h-open .viewport .h-channel .home-content .body.sections .card-layout .start-new-conversation button.h-img-button,
+  .hotline-launcher.h-open .viewport .h-conv .start-new-conversation button.h-img-button,
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .fc-carousel-wrapper .fc-multi-select .button-region .h-img-button {
+    border: 1px solid #0c8ae9;
+  }
+
+  .reply-options .reply-option-button:hover,
+  .h-reply-wrapper .h-reply-button .h-img-button:hover:not([disabled]),
+  .h-reply-wrapper .h-reply-button .h-img-button--selected,
+  .actions-button-dropdown .h-img-button:hover:not([disabled]),
+  .hotline-launcher.h-open .viewport .h-channel .home-content .body.sections .card-layout .start-new-conversation button.h-img-button:hover:not([disabled]),
+  .hotline-launcher.h-open .viewport .h-conv .start-new-conversation button.h-img-button:hover:not([disabled]),
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .fc-carousel-wrapper .h-img-button:hover:not([disabled]),
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .button-region .h-img-button:hover:not([disabled]) {
+    background-color: #0c8ae9 !important;
+    color: #FFFFFF;
+  }
+
+  .h-reply-wrapper .h-reply-button .btn-selected,
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .fc-carousel-cards .h-img-button--selected,
+  .h-chat-custom .h-conv .in-line-reply-fragments .h-conv-chat .h-img-button.btn-selected {
+    background-color: #0c8ae9 !important;
+    color: #FFFFFF;
+  }
+
+  .d-hotline {
+    background-color: #0c8ae9 !important;
+    color: #FFFFFF !important;
+    border-color: transparent #0c8ae9 transparent transparent;
+  }
+
+  #chat-icon {
+    background: #FFFFFF !important;
+  }
+
+  #chat-icon::before, #chat-icon::after {
+    background-color: #0c8ae9 !important;
+  }
+
+  .loader {
+    border-top: 1em solid rgba(#0c8ae9, 0.4);
+    border-right: 1.05em solid #0c8ae9;
+    border-bottom: 1.05em solid #0c8ae9;
+    border-left: 1.05em solid #0c8ae9;
+  }
+
+  .article-modal .modal-footer .h-message-us-btn:hover,
+  .article-modal .modal-footer .article_vote:hover {
+    background-color: #0c8ae9 !important;
+    color : #FFFFFF !important;
+  }
+
+  /* .article-content .modal-footer .h-message-us-btn:hover,
+  .article-content .modal-footer .article_vote:hover {
+    background-color: #0c8ae9 !important;
+    color : #FFFFFF !important;
+  } */
+
+  .tabs .tabs-inner:after{
+    background-color: #0c8ae9 !important;
+  }
+
+  .chat-btn:hover{
+    background-color: #0c8ae9 !important;
+    color: #FFFFFF !important;
+    border: 0 !important;
+  }
+
+  .submit-rating .submit.btn {
+    background-color: #0c8ae9 !important;
+    color: #FFFFFF !important;
+  }
+
+  .send-offline-reply .send-message {
+    background-color: #0c8ae9 !important;
+    color: #FFFFFF !important;
+  }
+
+  .h-comment.h-wrapped-article .articles-listview .article-showmore,
+  .fc-conversation-view div.body .h-chat-window .fc-agent-profile .u-social-network div i{
+    color: #0c8ae9 !important;
+  }
+
+  .h-chat-custom .odd .h-conv .h-comment.file-attached,
+  .h-chat-custom .odd .h-conv .h-comment.media-message {
+    background-color: unset !important;
+  }
+
+  .h-chat-custom .odd .h-conv .h-comment.file-attached .text-file-preview .text-haze-holder{
+    background-color: #0c8ae9 !important;
+    color: #FFFFFF !important;
+  }
+
+  .h-chat-custom .odd .h-conv .h-comment.file-attached .text-file-preview .text-haze-holder .bottom-gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #0c8ae9 100%) !important;
+  }
+
+  .article-content .fc_web_modal_closed .article-header-section .progress-bar {
+    background-color: #0c8ae9 !important;
+  }
+
+  .preview-container .h-reply-button .h-button-area button,
+  .h-reply-wrapper .h-reply-button .h-img-button,
+  .actions-button-dropdown .h-img-button {
+    border-color: #0c8ae9 !important;
+  }
+
+  .h-header .jwt-error-message {
+    color: #44412e !important;
+    background-color: #ffac00 !important;
+  }
+
+  .cal-time-slot:hover {
+      background-color: #0c8ae9;
+  }
+  .calendar-picker-minified .cal-picker-conf-view .confirm-button-holder .cal-confirm-button {
+      background-color: #0c8ae9;
+  }
+
+  .meeting-frag-holder {
+    background-color: #0c8ae9 !important;
+  }
+  .meeting-frag-holder .event-header {
+    color: #FFFFFF;
+  }
+  .h-conv-chat .h-chat .h-conv .h-comment .event-fragment .event-body .event-timings.actionable a{
+      color: #0c8ae9;
+  }
+
+  .h-conv-chat .h-chat .h-conv .h-comment.emojis-1,
+  .h-conv-chat .h-chat .h-conv .h-comment.emojis-2,
+  .h-conv-chat .h-chat .h-conv .h-comment.emojis-3 {
+    background-color: transparent !important;;
+  }
+
+  .h-reply-wrapper .ui-agent-typing-indicator {
+    background-color: #0c8ae9;
+  }
+
+  .h-reply-wrapper .ui-agent-typing-indicator .indicator-dot {
+    background-color: #FFFFFF;
+  }
+
+  .fc-mobile-close.minimize i.icon-ic_close{
+    color: #FFFFFF;
+  }
+</style></div>
+</body></html>
